@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **id** | **string** |  |
 **title** | **string** |  |
 **url** | **string** |  | [optional]
-**file** | [**\OpenAPI\Client\Model\DocumentFile**](DocumentFile.md) |  | [optional]
+**file** | [**\Syadem\SadvClient\Model\DocumentFile**](DocumentFile.md) |  | [optional]
 **organization** | **string** |  | [optional]
 **language** | **string** |  | [optional]
 **target_audience** | **string** |  | [optional]

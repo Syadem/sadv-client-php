@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Syadem\SadvClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Syadem\SadvClient\ObjectSerializer;
 
 /**
  * Document Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
         'id' => 'string',
         'title' => 'string',
         'url' => 'string',
-        'file' => '\OpenAPI\Client\Model\DocumentFile',
+        'file' => '\Syadem\SadvClient\Model\DocumentFile',
         'organization' => 'string',
         'language' => 'string',
         'target_audience' => 'string',
@@ -457,7 +457,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets file
      *
-     * @return \OpenAPI\Client\Model\DocumentFile|null
+     * @return \Syadem\SadvClient\Model\DocumentFile|null
      */
     public function getFile()
     {
@@ -467,7 +467,7 @@ class Document implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets file
      *
-     * @param \OpenAPI\Client\Model\DocumentFile|null $file file
+     * @param \Syadem\SadvClient\Model\DocumentFile|null $file file
      *
      * @return self
      */

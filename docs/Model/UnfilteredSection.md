@@ -26,7 +26,7 @@ Name | Type | Description | Notes
 **question_male** | **object** |  |
 **question_pro** | **object** |  |
 **position** | **int** |  |
-**sections** | [**\OpenAPI\Client\Model\UnfilteredSection[]**](UnfilteredSection.md) |  |
-**conditions** | [**\OpenAPI\Client\Model\Condition[]**](Condition.md) |  |
+**sections** | [**\Syadem\SadvClient\Model\UnfilteredSection[]**](UnfilteredSection.md) |  |
+**conditions** | [**\Syadem\SadvClient\Model\Condition[]**](Condition.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Syadem\SadvClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Syadem\SadvClient\ObjectSerializer;
 
 /**
  * DiagnosticForPatientBodyPatientJourney Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class DiagnosticForPatientBodyPatientJourney implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         'staying_conditions' => 'string',
-        'legs' => '\OpenAPI\Client\Model\DiagnosticForPatientBodyPatientJourneyLegsInner[]'
+        'legs' => '\Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientJourneyLegsInner[]'
     ];
 
     /**
@@ -333,7 +333,7 @@ class DiagnosticForPatientBodyPatientJourney implements ModelInterface, ArrayAcc
     /**
      * Gets legs
      *
-     * @return \OpenAPI\Client\Model\DiagnosticForPatientBodyPatientJourneyLegsInner[]
+     * @return \Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientJourneyLegsInner[]
      */
     public function getLegs()
     {
@@ -343,7 +343,7 @@ class DiagnosticForPatientBodyPatientJourney implements ModelInterface, ArrayAcc
     /**
      * Sets legs
      *
-     * @param \OpenAPI\Client\Model\DiagnosticForPatientBodyPatientJourneyLegsInner[] $legs legs
+     * @param \Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientJourneyLegsInner[] $legs legs
      *
      * @return self
      */

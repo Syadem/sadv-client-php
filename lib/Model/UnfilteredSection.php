@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Syadem\SadvClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Syadem\SadvClient\ObjectSerializer;
 
 /**
  * UnfilteredSection Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -80,8 +80,8 @@ class UnfilteredSection implements ModelInterface, ArrayAccess, \JsonSerializabl
         'question_male' => 'object',
         'question_pro' => 'object',
         'position' => 'int',
-        'sections' => '\OpenAPI\Client\Model\UnfilteredSection[]',
-        'conditions' => '\OpenAPI\Client\Model\Condition[]'
+        'sections' => '\Syadem\SadvClient\Model\UnfilteredSection[]',
+        'conditions' => '\Syadem\SadvClient\Model\Condition[]'
     ];
 
     /**
@@ -1120,7 +1120,7 @@ class UnfilteredSection implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets sections
      *
-     * @return \OpenAPI\Client\Model\UnfilteredSection[]
+     * @return \Syadem\SadvClient\Model\UnfilteredSection[]
      */
     public function getSections()
     {
@@ -1130,7 +1130,7 @@ class UnfilteredSection implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets sections
      *
-     * @param \OpenAPI\Client\Model\UnfilteredSection[] $sections sections
+     * @param \Syadem\SadvClient\Model\UnfilteredSection[] $sections sections
      *
      * @return self
      */
@@ -1147,7 +1147,7 @@ class UnfilteredSection implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets conditions
      *
-     * @return \OpenAPI\Client\Model\Condition[]
+     * @return \Syadem\SadvClient\Model\Condition[]
      */
     public function getConditions()
     {
@@ -1157,7 +1157,7 @@ class UnfilteredSection implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets conditions
      *
-     * @param \OpenAPI\Client\Model\Condition[] $conditions conditions
+     * @param \Syadem\SadvClient\Model\Condition[] $conditions conditions
      *
      * @return self
      */

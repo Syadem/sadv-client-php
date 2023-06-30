@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace Syadem\SadvClient\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -35,16 +35,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use Syadem\SadvClient\ApiException;
+use Syadem\SadvClient\Configuration;
+use Syadem\SadvClient\HeaderSelector;
+use Syadem\SadvClient\ObjectSerializer;
 
 /**
  * SadvApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,12 +140,12 @@ class SadvApi
      *
      * Get a diagnostic for the given profile
      *
-     * @param  \OpenAPI\Client\Model\DiagnosticForPatientBody $diagnostic_for_patient_body diagnostic_for_patient_body (required)
+     * @param  \Syadem\SadvClient\Model\DiagnosticForPatientBody $diagnostic_for_patient_body diagnostic_for_patient_body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['diagnosticForPatient'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Syadem\SadvClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Diagnostic|\OpenAPI\Client\Model\Error
+     * @return \Syadem\SadvClient\Model\Diagnostic|\Syadem\SadvClient\Model\Error
      */
     public function diagnosticForPatient($diagnostic_for_patient_body, string $contentType = self::contentTypes['diagnosticForPatient'][0])
     {
@@ -158,12 +158,12 @@ class SadvApi
      *
      * Get a diagnostic for the given profile
      *
-     * @param  \OpenAPI\Client\Model\DiagnosticForPatientBody $diagnostic_for_patient_body (required)
+     * @param  \Syadem\SadvClient\Model\DiagnosticForPatientBody $diagnostic_for_patient_body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['diagnosticForPatient'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Syadem\SadvClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Diagnostic|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Syadem\SadvClient\Model\Diagnostic|\Syadem\SadvClient\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function diagnosticForPatientWithHttpInfo($diagnostic_for_patient_body, string $contentType = self::contentTypes['diagnosticForPatient'][0])
     {
@@ -206,38 +206,38 @@ class SadvApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Diagnostic' === '\SplFileObject') {
+                    if ('\Syadem\SadvClient\Model\Diagnostic' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Diagnostic' !== 'string') {
+                        if ('\Syadem\SadvClient\Model\Diagnostic' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Diagnostic', []),
+                        ObjectSerializer::deserialize($content, '\Syadem\SadvClient\Model\Diagnostic', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Syadem\SadvClient\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Syadem\SadvClient\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Syadem\SadvClient\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Diagnostic';
+            $returnType = '\Syadem\SadvClient\Model\Diagnostic';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -258,7 +258,7 @@ class SadvApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Diagnostic',
+                        '\Syadem\SadvClient\Model\Diagnostic',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -266,7 +266,7 @@ class SadvApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Syadem\SadvClient\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -281,7 +281,7 @@ class SadvApi
      *
      * Get a diagnostic for the given profile
      *
-     * @param  \OpenAPI\Client\Model\DiagnosticForPatientBody $diagnostic_for_patient_body (required)
+     * @param  \Syadem\SadvClient\Model\DiagnosticForPatientBody $diagnostic_for_patient_body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['diagnosticForPatient'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -302,7 +302,7 @@ class SadvApi
      *
      * Get a diagnostic for the given profile
      *
-     * @param  \OpenAPI\Client\Model\DiagnosticForPatientBody $diagnostic_for_patient_body (required)
+     * @param  \Syadem\SadvClient\Model\DiagnosticForPatientBody $diagnostic_for_patient_body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['diagnosticForPatient'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -310,7 +310,7 @@ class SadvApi
      */
     public function diagnosticForPatientAsyncWithHttpInfo($diagnostic_for_patient_body, string $contentType = self::contentTypes['diagnosticForPatient'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Diagnostic';
+        $returnType = '\Syadem\SadvClient\Model\Diagnostic';
         $request = $this->diagnosticForPatientRequest($diagnostic_for_patient_body, $contentType);
 
         return $this->client
@@ -352,7 +352,7 @@ class SadvApi
     /**
      * Create request for operation 'diagnosticForPatient'
      *
-     * @param  \OpenAPI\Client\Model\DiagnosticForPatientBody $diagnostic_for_patient_body (required)
+     * @param  \Syadem\SadvClient\Model\DiagnosticForPatientBody $diagnostic_for_patient_body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['diagnosticForPatient'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -447,9 +447,9 @@ class SadvApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['genericQuestionnaire'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Syadem\SadvClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\UnfilteredSection[]|\OpenAPI\Client\Model\Error
+     * @return \Syadem\SadvClient\Model\UnfilteredSection[]|\Syadem\SadvClient\Model\Error
      */
     public function genericQuestionnaire(string $contentType = self::contentTypes['genericQuestionnaire'][0])
     {
@@ -464,9 +464,9 @@ class SadvApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['genericQuestionnaire'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Syadem\SadvClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\UnfilteredSection[]|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Syadem\SadvClient\Model\UnfilteredSection[]|\Syadem\SadvClient\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function genericQuestionnaireWithHttpInfo(string $contentType = self::contentTypes['genericQuestionnaire'][0])
     {
@@ -509,38 +509,38 @@ class SadvApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\UnfilteredSection[]' === '\SplFileObject') {
+                    if ('\Syadem\SadvClient\Model\UnfilteredSection[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\UnfilteredSection[]' !== 'string') {
+                        if ('\Syadem\SadvClient\Model\UnfilteredSection[]' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\UnfilteredSection[]', []),
+                        ObjectSerializer::deserialize($content, '\Syadem\SadvClient\Model\UnfilteredSection[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Syadem\SadvClient\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Syadem\SadvClient\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Syadem\SadvClient\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\UnfilteredSection[]';
+            $returnType = '\Syadem\SadvClient\Model\UnfilteredSection[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -561,7 +561,7 @@ class SadvApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\UnfilteredSection[]',
+                        '\Syadem\SadvClient\Model\UnfilteredSection[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -569,7 +569,7 @@ class SadvApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Syadem\SadvClient\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -611,7 +611,7 @@ class SadvApi
      */
     public function genericQuestionnaireAsyncWithHttpInfo(string $contentType = self::contentTypes['genericQuestionnaire'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\UnfilteredSection[]';
+        $returnType = '\Syadem\SadvClient\Model\UnfilteredSection[]';
         $request = $this->genericQuestionnaireRequest($contentType);
 
         return $this->client
@@ -734,9 +734,9 @@ class SadvApi
      * @param  string $id id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['genericQuestionnaireById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Syadem\SadvClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\UnfilteredSection[]|\OpenAPI\Client\Model\Error
+     * @return \Syadem\SadvClient\Model\UnfilteredSection[]|\Syadem\SadvClient\Model\Error
      */
     public function genericQuestionnaireById($id, string $contentType = self::contentTypes['genericQuestionnaireById'][0])
     {
@@ -752,9 +752,9 @@ class SadvApi
      * @param  string $id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['genericQuestionnaireById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Syadem\SadvClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\UnfilteredSection[]|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Syadem\SadvClient\Model\UnfilteredSection[]|\Syadem\SadvClient\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function genericQuestionnaireByIdWithHttpInfo($id, string $contentType = self::contentTypes['genericQuestionnaireById'][0])
     {
@@ -797,38 +797,38 @@ class SadvApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\UnfilteredSection[]' === '\SplFileObject') {
+                    if ('\Syadem\SadvClient\Model\UnfilteredSection[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\UnfilteredSection[]' !== 'string') {
+                        if ('\Syadem\SadvClient\Model\UnfilteredSection[]' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\UnfilteredSection[]', []),
+                        ObjectSerializer::deserialize($content, '\Syadem\SadvClient\Model\UnfilteredSection[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Syadem\SadvClient\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Syadem\SadvClient\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Syadem\SadvClient\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\UnfilteredSection[]';
+            $returnType = '\Syadem\SadvClient\Model\UnfilteredSection[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -849,7 +849,7 @@ class SadvApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\UnfilteredSection[]',
+                        '\Syadem\SadvClient\Model\UnfilteredSection[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -857,7 +857,7 @@ class SadvApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Syadem\SadvClient\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -901,7 +901,7 @@ class SadvApi
      */
     public function genericQuestionnaireByIdAsyncWithHttpInfo($id, string $contentType = self::contentTypes['genericQuestionnaireById'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\UnfilteredSection[]';
+        $returnType = '\Syadem\SadvClient\Model\UnfilteredSection[]';
         $request = $this->genericQuestionnaireByIdRequest($id, $contentType);
 
         return $this->client
@@ -1037,12 +1037,12 @@ class SadvApi
      *
      * Get a filtered questionnaire for a given profile
      *
-     * @param  \OpenAPI\Client\Model\ProfilQuestionnaireBody $profil_questionnaire_body profil_questionnaire_body (required)
+     * @param  \Syadem\SadvClient\Model\ProfilQuestionnaireBody $profil_questionnaire_body profil_questionnaire_body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['profilQuestionnaire'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Syadem\SadvClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\FilteredSection[]|\OpenAPI\Client\Model\Error
+     * @return \Syadem\SadvClient\Model\FilteredSection[]|\Syadem\SadvClient\Model\Error
      */
     public function profilQuestionnaire($profil_questionnaire_body, string $contentType = self::contentTypes['profilQuestionnaire'][0])
     {
@@ -1055,12 +1055,12 @@ class SadvApi
      *
      * Get a filtered questionnaire for a given profile
      *
-     * @param  \OpenAPI\Client\Model\ProfilQuestionnaireBody $profil_questionnaire_body (required)
+     * @param  \Syadem\SadvClient\Model\ProfilQuestionnaireBody $profil_questionnaire_body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['profilQuestionnaire'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Syadem\SadvClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\FilteredSection[]|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Syadem\SadvClient\Model\FilteredSection[]|\Syadem\SadvClient\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function profilQuestionnaireWithHttpInfo($profil_questionnaire_body, string $contentType = self::contentTypes['profilQuestionnaire'][0])
     {
@@ -1103,38 +1103,38 @@ class SadvApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\FilteredSection[]' === '\SplFileObject') {
+                    if ('\Syadem\SadvClient\Model\FilteredSection[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\FilteredSection[]' !== 'string') {
+                        if ('\Syadem\SadvClient\Model\FilteredSection[]' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\FilteredSection[]', []),
+                        ObjectSerializer::deserialize($content, '\Syadem\SadvClient\Model\FilteredSection[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Syadem\SadvClient\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Syadem\SadvClient\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Syadem\SadvClient\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\FilteredSection[]';
+            $returnType = '\Syadem\SadvClient\Model\FilteredSection[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1155,7 +1155,7 @@ class SadvApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\FilteredSection[]',
+                        '\Syadem\SadvClient\Model\FilteredSection[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1163,7 +1163,7 @@ class SadvApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Syadem\SadvClient\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1178,7 +1178,7 @@ class SadvApi
      *
      * Get a filtered questionnaire for a given profile
      *
-     * @param  \OpenAPI\Client\Model\ProfilQuestionnaireBody $profil_questionnaire_body (required)
+     * @param  \Syadem\SadvClient\Model\ProfilQuestionnaireBody $profil_questionnaire_body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['profilQuestionnaire'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1199,7 +1199,7 @@ class SadvApi
      *
      * Get a filtered questionnaire for a given profile
      *
-     * @param  \OpenAPI\Client\Model\ProfilQuestionnaireBody $profil_questionnaire_body (required)
+     * @param  \Syadem\SadvClient\Model\ProfilQuestionnaireBody $profil_questionnaire_body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['profilQuestionnaire'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1207,7 +1207,7 @@ class SadvApi
      */
     public function profilQuestionnaireAsyncWithHttpInfo($profil_questionnaire_body, string $contentType = self::contentTypes['profilQuestionnaire'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\FilteredSection[]';
+        $returnType = '\Syadem\SadvClient\Model\FilteredSection[]';
         $request = $this->profilQuestionnaireRequest($profil_questionnaire_body, $contentType);
 
         return $this->client
@@ -1249,7 +1249,7 @@ class SadvApi
     /**
      * Create request for operation 'profilQuestionnaire'
      *
-     * @param  \OpenAPI\Client\Model\ProfilQuestionnaireBody $profil_questionnaire_body (required)
+     * @param  \Syadem\SadvClient\Model\ProfilQuestionnaireBody $profil_questionnaire_body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['profilQuestionnaire'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1343,12 +1343,12 @@ class SadvApi
      * Get a filtered questionnaire for a given profile and a given id
      *
      * @param  string $id id (required)
-     * @param  \OpenAPI\Client\Model\ProfilQuestionnaireByIdBody $profil_questionnaire_by_id_body profil_questionnaire_by_id_body (required)
+     * @param  \Syadem\SadvClient\Model\ProfilQuestionnaireByIdBody $profil_questionnaire_by_id_body profil_questionnaire_by_id_body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['profilQuestionnaireById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Syadem\SadvClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\FilteredSection[]|\OpenAPI\Client\Model\Error
+     * @return \Syadem\SadvClient\Model\FilteredSection[]|\Syadem\SadvClient\Model\Error
      */
     public function profilQuestionnaireById($id, $profil_questionnaire_by_id_body, string $contentType = self::contentTypes['profilQuestionnaireById'][0])
     {
@@ -1362,12 +1362,12 @@ class SadvApi
      * Get a filtered questionnaire for a given profile and a given id
      *
      * @param  string $id (required)
-     * @param  \OpenAPI\Client\Model\ProfilQuestionnaireByIdBody $profil_questionnaire_by_id_body (required)
+     * @param  \Syadem\SadvClient\Model\ProfilQuestionnaireByIdBody $profil_questionnaire_by_id_body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['profilQuestionnaireById'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \Syadem\SadvClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\FilteredSection[]|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Syadem\SadvClient\Model\FilteredSection[]|\Syadem\SadvClient\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function profilQuestionnaireByIdWithHttpInfo($id, $profil_questionnaire_by_id_body, string $contentType = self::contentTypes['profilQuestionnaireById'][0])
     {
@@ -1410,38 +1410,38 @@ class SadvApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\FilteredSection[]' === '\SplFileObject') {
+                    if ('\Syadem\SadvClient\Model\FilteredSection[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\FilteredSection[]' !== 'string') {
+                        if ('\Syadem\SadvClient\Model\FilteredSection[]' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\FilteredSection[]', []),
+                        ObjectSerializer::deserialize($content, '\Syadem\SadvClient\Model\FilteredSection[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\Syadem\SadvClient\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\Syadem\SadvClient\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\Syadem\SadvClient\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\FilteredSection[]';
+            $returnType = '\Syadem\SadvClient\Model\FilteredSection[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1462,7 +1462,7 @@ class SadvApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\FilteredSection[]',
+                        '\Syadem\SadvClient\Model\FilteredSection[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1470,7 +1470,7 @@ class SadvApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\Syadem\SadvClient\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1486,7 +1486,7 @@ class SadvApi
      * Get a filtered questionnaire for a given profile and a given id
      *
      * @param  string $id (required)
-     * @param  \OpenAPI\Client\Model\ProfilQuestionnaireByIdBody $profil_questionnaire_by_id_body (required)
+     * @param  \Syadem\SadvClient\Model\ProfilQuestionnaireByIdBody $profil_questionnaire_by_id_body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['profilQuestionnaireById'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1508,7 +1508,7 @@ class SadvApi
      * Get a filtered questionnaire for a given profile and a given id
      *
      * @param  string $id (required)
-     * @param  \OpenAPI\Client\Model\ProfilQuestionnaireByIdBody $profil_questionnaire_by_id_body (required)
+     * @param  \Syadem\SadvClient\Model\ProfilQuestionnaireByIdBody $profil_questionnaire_by_id_body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['profilQuestionnaireById'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1516,7 +1516,7 @@ class SadvApi
      */
     public function profilQuestionnaireByIdAsyncWithHttpInfo($id, $profil_questionnaire_by_id_body, string $contentType = self::contentTypes['profilQuestionnaireById'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\FilteredSection[]';
+        $returnType = '\Syadem\SadvClient\Model\FilteredSection[]';
         $request = $this->profilQuestionnaireByIdRequest($id, $profil_questionnaire_by_id_body, $contentType);
 
         return $this->client
@@ -1559,7 +1559,7 @@ class SadvApi
      * Create request for operation 'profilQuestionnaireById'
      *
      * @param  string $id (required)
-     * @param  \OpenAPI\Client\Model\ProfilQuestionnaireByIdBody $profil_questionnaire_by_id_body (required)
+     * @param  \Syadem\SadvClient\Model\ProfilQuestionnaireByIdBody $profil_questionnaire_by_id_body (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['profilQuestionnaireById'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

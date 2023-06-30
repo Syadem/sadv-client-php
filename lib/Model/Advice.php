@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Syadem\SadvClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Syadem\SadvClient\ObjectSerializer;
 
 /**
  * Advice Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,12 +58,12 @@ class Advice implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'conclusion' => '\OpenAPI\Client\Model\Conclusion',
-        'messages' => '\OpenAPI\Client\Model\Message[]',
+        'conclusion' => '\Syadem\SadvClient\Model\Conclusion',
+        'messages' => '\Syadem\SadvClient\Model\Message[]',
         'targeted_date' => '\DateTime',
         'limit_date' => '\DateTime',
-        'matching_conditions' => '\OpenAPI\Client\Model\Condition[]',
-        'documents' => '\OpenAPI\Client\Model\Document[]'
+        'matching_conditions' => '\Syadem\SadvClient\Model\Condition[]',
+        'documents' => '\Syadem\SadvClient\Model\Document[]'
     ];
 
     /**
@@ -346,7 +346,7 @@ class Advice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets conclusion
      *
-     * @return \OpenAPI\Client\Model\Conclusion
+     * @return \Syadem\SadvClient\Model\Conclusion
      */
     public function getConclusion()
     {
@@ -356,7 +356,7 @@ class Advice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets conclusion
      *
-     * @param \OpenAPI\Client\Model\Conclusion $conclusion conclusion
+     * @param \Syadem\SadvClient\Model\Conclusion $conclusion conclusion
      *
      * @return self
      */
@@ -373,7 +373,7 @@ class Advice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets messages
      *
-     * @return \OpenAPI\Client\Model\Message[]
+     * @return \Syadem\SadvClient\Model\Message[]
      */
     public function getMessages()
     {
@@ -383,7 +383,7 @@ class Advice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets messages
      *
-     * @param \OpenAPI\Client\Model\Message[] $messages messages
+     * @param \Syadem\SadvClient\Model\Message[] $messages messages
      *
      * @return self
      */
@@ -468,7 +468,7 @@ class Advice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets matching_conditions
      *
-     * @return \OpenAPI\Client\Model\Condition[]
+     * @return \Syadem\SadvClient\Model\Condition[]
      */
     public function getMatchingConditions()
     {
@@ -478,7 +478,7 @@ class Advice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets matching_conditions
      *
-     * @param \OpenAPI\Client\Model\Condition[] $matching_conditions matching_conditions
+     * @param \Syadem\SadvClient\Model\Condition[] $matching_conditions matching_conditions
      *
      * @return self
      */
@@ -495,7 +495,7 @@ class Advice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets documents
      *
-     * @return \OpenAPI\Client\Model\Document[]
+     * @return \Syadem\SadvClient\Model\Document[]
      */
     public function getDocuments()
     {
@@ -505,7 +505,7 @@ class Advice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets documents
      *
-     * @param \OpenAPI\Client\Model\Document[] $documents documents
+     * @param \Syadem\SadvClient\Model\Document[] $documents documents
      *
      * @return self
      */

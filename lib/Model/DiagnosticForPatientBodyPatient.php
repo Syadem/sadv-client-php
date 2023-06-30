@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Syadem\SadvClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Syadem\SadvClient\ObjectSerializer;
 
 /**
  * DiagnosticForPatientBodyPatient Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,11 +60,11 @@ class DiagnosticForPatientBodyPatient implements ModelInterface, ArrayAccess, \J
     protected static $openAPITypes = [
         'birthdate' => 'string',
         'gender' => 'string',
-        'prevention_acts' => '\OpenAPI\Client\Model\DiagnosticForPatientBodyPatientPreventionActsInner[]',
-        'conditions' => '\OpenAPI\Client\Model\DiagnosticForPatientBodyPatientConditionsInner[]',
-        'journey' => '\OpenAPI\Client\Model\DiagnosticForPatientBodyPatientJourney',
-        'area_of_residency' => '\OpenAPI\Client\Model\DiagnosticForPatientBodyPatientAreaOfResidency',
-        'birthplace' => '\OpenAPI\Client\Model\DiagnosticForPatientBodyPatientBirthplace'
+        'prevention_acts' => '\Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientPreventionActsInner[]',
+        'conditions' => '\Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientConditionsInner[]',
+        'journey' => '\Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientJourney',
+        'area_of_residency' => '\Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientAreaOfResidency',
+        'birthplace' => '\Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientBirthplace'
     ];
 
     /**
@@ -395,7 +395,7 @@ class DiagnosticForPatientBodyPatient implements ModelInterface, ArrayAccess, \J
     /**
      * Gets prevention_acts
      *
-     * @return \OpenAPI\Client\Model\DiagnosticForPatientBodyPatientPreventionActsInner[]|null
+     * @return \Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientPreventionActsInner[]|null
      */
     public function getPreventionActs()
     {
@@ -405,7 +405,7 @@ class DiagnosticForPatientBodyPatient implements ModelInterface, ArrayAccess, \J
     /**
      * Sets prevention_acts
      *
-     * @param \OpenAPI\Client\Model\DiagnosticForPatientBodyPatientPreventionActsInner[]|null $prevention_acts prevention_acts
+     * @param \Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientPreventionActsInner[]|null $prevention_acts prevention_acts
      *
      * @return self
      */
@@ -422,7 +422,7 @@ class DiagnosticForPatientBodyPatient implements ModelInterface, ArrayAccess, \J
     /**
      * Gets conditions
      *
-     * @return \OpenAPI\Client\Model\DiagnosticForPatientBodyPatientConditionsInner[]|null
+     * @return \Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientConditionsInner[]|null
      */
     public function getConditions()
     {
@@ -432,7 +432,7 @@ class DiagnosticForPatientBodyPatient implements ModelInterface, ArrayAccess, \J
     /**
      * Sets conditions
      *
-     * @param \OpenAPI\Client\Model\DiagnosticForPatientBodyPatientConditionsInner[]|null $conditions conditions
+     * @param \Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientConditionsInner[]|null $conditions conditions
      *
      * @return self
      */
@@ -449,7 +449,7 @@ class DiagnosticForPatientBodyPatient implements ModelInterface, ArrayAccess, \J
     /**
      * Gets journey
      *
-     * @return \OpenAPI\Client\Model\DiagnosticForPatientBodyPatientJourney|null
+     * @return \Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientJourney|null
      */
     public function getJourney()
     {
@@ -459,7 +459,7 @@ class DiagnosticForPatientBodyPatient implements ModelInterface, ArrayAccess, \J
     /**
      * Sets journey
      *
-     * @param \OpenAPI\Client\Model\DiagnosticForPatientBodyPatientJourney|null $journey journey
+     * @param \Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientJourney|null $journey journey
      *
      * @return self
      */
@@ -476,7 +476,7 @@ class DiagnosticForPatientBodyPatient implements ModelInterface, ArrayAccess, \J
     /**
      * Gets area_of_residency
      *
-     * @return \OpenAPI\Client\Model\DiagnosticForPatientBodyPatientAreaOfResidency|null
+     * @return \Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientAreaOfResidency|null
      */
     public function getAreaOfResidency()
     {
@@ -486,7 +486,7 @@ class DiagnosticForPatientBodyPatient implements ModelInterface, ArrayAccess, \J
     /**
      * Sets area_of_residency
      *
-     * @param \OpenAPI\Client\Model\DiagnosticForPatientBodyPatientAreaOfResidency|null $area_of_residency area_of_residency
+     * @param \Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientAreaOfResidency|null $area_of_residency area_of_residency
      *
      * @return self
      */
@@ -503,7 +503,7 @@ class DiagnosticForPatientBodyPatient implements ModelInterface, ArrayAccess, \J
     /**
      * Gets birthplace
      *
-     * @return \OpenAPI\Client\Model\DiagnosticForPatientBodyPatientBirthplace|null
+     * @return \Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientBirthplace|null
      */
     public function getBirthplace()
     {
@@ -513,7 +513,7 @@ class DiagnosticForPatientBodyPatient implements ModelInterface, ArrayAccess, \J
     /**
      * Sets birthplace
      *
-     * @param \OpenAPI\Client\Model\DiagnosticForPatientBodyPatientBirthplace|null $birthplace birthplace
+     * @param \Syadem\SadvClient\Model\DiagnosticForPatientBodyPatientBirthplace|null $birthplace birthplace
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPIClient-php
+# sadv-client-php
 
 SADV API
 
@@ -36,7 +36,7 @@ Download the files and include `autoload.php`:
 
 ```php
 <?php
-require_once('/path/to/OpenAPIClient-php/vendor/autoload.php');
+require_once('/path/to/sadv-client-php/vendor/autoload.php');
 ```
 
 ## Getting Started
@@ -50,12 +50,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\SadvApi(
+$apiInstance = new Syadem\SadvClient\Api\SadvApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$diagnostic_for_patient_body = new \OpenAPI\Client\Model\DiagnosticForPatientBody(); // \OpenAPI\Client\Model\DiagnosticForPatientBody
+$diagnostic_for_patient_body = new \Syadem\SadvClient\Model\DiagnosticForPatientBody(); // \Syadem\SadvClient\Model\DiagnosticForPatientBody
 
 try {
     $result = $apiInstance->diagnosticForPatient($diagnostic_for_patient_body);

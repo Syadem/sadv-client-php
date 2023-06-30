@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Syadem\SadvClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Syadem\SadvClient\ObjectSerializer;
 
 /**
  * ProfilQuestionnaireByIdBody Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ProfilQuestionnaireByIdBody implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'patient' => '\OpenAPI\Client\Model\DiagnosticForPatientBodyPatient',
+        'patient' => '\Syadem\SadvClient\Model\DiagnosticForPatientBodyPatient',
         'requested_by_professional' => 'bool'
     ];
 
@@ -303,7 +303,7 @@ class ProfilQuestionnaireByIdBody implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets patient
      *
-     * @return \OpenAPI\Client\Model\DiagnosticForPatientBodyPatient
+     * @return \Syadem\SadvClient\Model\DiagnosticForPatientBodyPatient
      */
     public function getPatient()
     {
@@ -313,7 +313,7 @@ class ProfilQuestionnaireByIdBody implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets patient
      *
-     * @param \OpenAPI\Client\Model\DiagnosticForPatientBodyPatient $patient patient
+     * @param \Syadem\SadvClient\Model\DiagnosticForPatientBodyPatient $patient patient
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\SadvApi
+# Syadem\SadvClient\SadvApi
 
 All URIs are relative to http://localhost:8001, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to http://localhost:8001, except if the operation defines 
 ## `diagnosticForPatient()`
 
 ```php
-diagnosticForPatient($diagnostic_for_patient_body): \OpenAPI\Client\Model\Diagnostic
+diagnosticForPatient($diagnostic_for_patient_body): \Syadem\SadvClient\Model\Diagnostic
 ```
 
 Get a diagnostic for the given profile
@@ -27,12 +27,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\SadvApi(
+$apiInstance = new Syadem\SadvClient\Api\SadvApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$diagnostic_for_patient_body = new \OpenAPI\Client\Model\DiagnosticForPatientBody(); // \OpenAPI\Client\Model\DiagnosticForPatientBody
+$diagnostic_for_patient_body = new \Syadem\SadvClient\Model\DiagnosticForPatientBody(); // \Syadem\SadvClient\Model\DiagnosticForPatientBody
 
 try {
     $result = $apiInstance->diagnosticForPatient($diagnostic_for_patient_body);
@@ -46,11 +46,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **diagnostic_for_patient_body** | [**\OpenAPI\Client\Model\DiagnosticForPatientBody**](../Model/DiagnosticForPatientBody.md)|  | |
+| **diagnostic_for_patient_body** | [**\Syadem\SadvClient\Model\DiagnosticForPatientBody**](../Model/DiagnosticForPatientBody.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Diagnostic**](../Model/Diagnostic.md)
+[**\Syadem\SadvClient\Model\Diagnostic**](../Model/Diagnostic.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ No authorization required
 ## `genericQuestionnaire()`
 
 ```php
-genericQuestionnaire(): \OpenAPI\Client\Model\UnfilteredSection[]
+genericQuestionnaire(): \Syadem\SadvClient\Model\UnfilteredSection[]
 ```
 
 Get an unfiltered questionnaire
@@ -81,7 +81,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\SadvApi(
+$apiInstance = new Syadem\SadvClient\Api\SadvApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -101,7 +101,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\UnfilteredSection[]**](../Model/UnfilteredSection.md)
+[**\Syadem\SadvClient\Model\UnfilteredSection[]**](../Model/UnfilteredSection.md)
 
 ### Authorization
 
@@ -119,7 +119,7 @@ No authorization required
 ## `genericQuestionnaireById()`
 
 ```php
-genericQuestionnaireById($id): \OpenAPI\Client\Model\UnfilteredSection[]
+genericQuestionnaireById($id): \Syadem\SadvClient\Model\UnfilteredSection[]
 ```
 
 Get an unfiltered questionnaire for the given id
@@ -132,7 +132,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\SadvApi(
+$apiInstance = new Syadem\SadvClient\Api\SadvApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -155,7 +155,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\UnfilteredSection[]**](../Model/UnfilteredSection.md)
+[**\Syadem\SadvClient\Model\UnfilteredSection[]**](../Model/UnfilteredSection.md)
 
 ### Authorization
 
@@ -173,7 +173,7 @@ No authorization required
 ## `profilQuestionnaire()`
 
 ```php
-profilQuestionnaire($profil_questionnaire_body): \OpenAPI\Client\Model\FilteredSection[]
+profilQuestionnaire($profil_questionnaire_body): \Syadem\SadvClient\Model\FilteredSection[]
 ```
 
 Get a filtered questionnaire for a given profile
@@ -186,12 +186,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\SadvApi(
+$apiInstance = new Syadem\SadvClient\Api\SadvApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$profil_questionnaire_body = new \OpenAPI\Client\Model\ProfilQuestionnaireBody(); // \OpenAPI\Client\Model\ProfilQuestionnaireBody
+$profil_questionnaire_body = new \Syadem\SadvClient\Model\ProfilQuestionnaireBody(); // \Syadem\SadvClient\Model\ProfilQuestionnaireBody
 
 try {
     $result = $apiInstance->profilQuestionnaire($profil_questionnaire_body);
@@ -205,11 +205,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **profil_questionnaire_body** | [**\OpenAPI\Client\Model\ProfilQuestionnaireBody**](../Model/ProfilQuestionnaireBody.md)|  | |
+| **profil_questionnaire_body** | [**\Syadem\SadvClient\Model\ProfilQuestionnaireBody**](../Model/ProfilQuestionnaireBody.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\FilteredSection[]**](../Model/FilteredSection.md)
+[**\Syadem\SadvClient\Model\FilteredSection[]**](../Model/FilteredSection.md)
 
 ### Authorization
 
@@ -227,7 +227,7 @@ No authorization required
 ## `profilQuestionnaireById()`
 
 ```php
-profilQuestionnaireById($id, $profil_questionnaire_by_id_body): \OpenAPI\Client\Model\FilteredSection[]
+profilQuestionnaireById($id, $profil_questionnaire_by_id_body): \Syadem\SadvClient\Model\FilteredSection[]
 ```
 
 Get a filtered questionnaire for a given profile and a given id
@@ -240,13 +240,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\SadvApi(
+$apiInstance = new Syadem\SadvClient\Api\SadvApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $id = 'id_example'; // string
-$profil_questionnaire_by_id_body = new \OpenAPI\Client\Model\ProfilQuestionnaireByIdBody(); // \OpenAPI\Client\Model\ProfilQuestionnaireByIdBody
+$profil_questionnaire_by_id_body = new \Syadem\SadvClient\Model\ProfilQuestionnaireByIdBody(); // \Syadem\SadvClient\Model\ProfilQuestionnaireByIdBody
 
 try {
     $result = $apiInstance->profilQuestionnaireById($id, $profil_questionnaire_by_id_body);
@@ -261,11 +261,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**|  | |
-| **profil_questionnaire_by_id_body** | [**\OpenAPI\Client\Model\ProfilQuestionnaireByIdBody**](../Model/ProfilQuestionnaireByIdBody.md)|  | |
+| **profil_questionnaire_by_id_body** | [**\Syadem\SadvClient\Model\ProfilQuestionnaireByIdBody**](../Model/ProfilQuestionnaireByIdBody.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\FilteredSection[]**](../Model/FilteredSection.md)
+[**\Syadem\SadvClient\Model\FilteredSection[]**](../Model/FilteredSection.md)
 
 ### Authorization
 

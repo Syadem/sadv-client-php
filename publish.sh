@@ -12,4 +12,4 @@ if [ -z "$DEPLOY_TOKEN" ]; then
 	exit 1
 fi
 
-curl --data tag=v$VERSION --header "Deploy-Token: $DEPLOY_TOKEN" "https://gitlab.mesvaccins.net/api/v4/projects/159/packages/composer"
+curl -v --data tag=v$VERSION --header "Deploy-Token: $DEPLOY_TOKEN" "https://gitlab.mesvaccins.net/api/v4/projects/159/packages/composer"

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Syadem\SadvClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Syadem\SadvClient\ObjectSerializer;
 
 /**
  * DiagnosticPerDisease Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class DiagnosticPerDisease implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'disease' => '\OpenAPI\Client\Model\Disease',
-        'advice' => '\OpenAPI\Client\Model\Advice',
+        'disease' => '\Syadem\SadvClient\Model\Disease',
+        'advice' => '\Syadem\SadvClient\Model\Advice',
         'prevention_acts_count' => 'int'
     ];
 
@@ -316,7 +316,7 @@ class DiagnosticPerDisease implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets disease
      *
-     * @return \OpenAPI\Client\Model\Disease
+     * @return \Syadem\SadvClient\Model\Disease
      */
     public function getDisease()
     {
@@ -326,7 +326,7 @@ class DiagnosticPerDisease implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets disease
      *
-     * @param \OpenAPI\Client\Model\Disease $disease disease
+     * @param \Syadem\SadvClient\Model\Disease $disease disease
      *
      * @return self
      */
@@ -343,7 +343,7 @@ class DiagnosticPerDisease implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets advice
      *
-     * @return \OpenAPI\Client\Model\Advice
+     * @return \Syadem\SadvClient\Model\Advice
      */
     public function getAdvice()
     {
@@ -353,7 +353,7 @@ class DiagnosticPerDisease implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets advice
      *
-     * @param \OpenAPI\Client\Model\Advice $advice advice
+     * @param \Syadem\SadvClient\Model\Advice $advice advice
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace Syadem\SadvClient\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \Syadem\SadvClient\ObjectSerializer;
 
 /**
  * Diagnostic Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Syadem\SadvClient
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class Diagnostic implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'conclusion' => '\OpenAPI\Client\Model\Conclusion',
-        'diagnostic_per_disease' => '\OpenAPI\Client\Model\DiagnosticPerDisease[]'
+        'conclusion' => '\Syadem\SadvClient\Model\Conclusion',
+        'diagnostic_per_disease' => '\Syadem\SadvClient\Model\DiagnosticPerDisease[]'
     ];
 
     /**
@@ -306,7 +306,7 @@ class Diagnostic implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets conclusion
      *
-     * @return \OpenAPI\Client\Model\Conclusion
+     * @return \Syadem\SadvClient\Model\Conclusion
      */
     public function getConclusion()
     {
@@ -316,7 +316,7 @@ class Diagnostic implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets conclusion
      *
-     * @param \OpenAPI\Client\Model\Conclusion $conclusion conclusion
+     * @param \Syadem\SadvClient\Model\Conclusion $conclusion conclusion
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class Diagnostic implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets diagnostic_per_disease
      *
-     * @return \OpenAPI\Client\Model\DiagnosticPerDisease[]
+     * @return \Syadem\SadvClient\Model\DiagnosticPerDisease[]
      */
     public function getDiagnosticPerDisease()
     {
@@ -343,7 +343,7 @@ class Diagnostic implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets diagnostic_per_disease
      *
-     * @param \OpenAPI\Client\Model\DiagnosticPerDisease[] $diagnostic_per_disease diagnostic_per_disease
+     * @param \Syadem\SadvClient\Model\DiagnosticPerDisease[] $diagnostic_per_disease diagnostic_per_disease
      *
      * @return self
      */
