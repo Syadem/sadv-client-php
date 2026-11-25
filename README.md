@@ -12,9 +12,10 @@ Should also work with PHP 8.0.
 
 ### Composer
 
-The package is published on [Packagist](https://packagist.org/packages/syadem/sadv-client). Install it with [Composer](https://getcomposer.org/):
+Declare this repository in your `composer.json`, then install the package with [Composer](https://getcomposer.org/):
 
 ```bash
+composer config repositories.syadem-sadv-client git https://github.com/Syadem/sadv-client-php.git
 composer require syadem/sadv-client
 ```
 
