@@ -12,23 +12,11 @@ Should also work with PHP 8.0.
 
 ### Composer
 
-To install the bindings via [Composer](https://getcomposer.org/), add the following to `composer.json`:
+The package is published on [Packagist](https://packagist.org/packages/syadem/sadv-client). Install it with [Composer](https://getcomposer.org/):
 
-```json
-{
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/syadem/sadv-client.git"
-    }
-  ],
-  "require": {
-    "syadem/sadv-client": "*@dev"
-  }
-}
+```bash
+composer require syadem/sadv-client
 ```
-
-Then run `composer install`
 
 ### Manual Installation
 
